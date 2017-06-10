@@ -7,8 +7,8 @@ public class Professor extends Human {
 
     String specialization;
 
-    public Professor(String surname, String name, boolean sex, String birthDate) {
-        super(surname, name, sex, birthDate);
+    public Professor(int id, String surname, String name, boolean sex, String birthDate) {
+        super(id, surname, name, sex, birthDate);
     }
 
     @Override

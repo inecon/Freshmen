@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 public class ProfessorTest {
     @Test
     public void ProffessorShouldTakeCorrectData() {
-        Professor professor = new Professor("Павлов", "Борис", true, "01.01.1954");
+        Professor professor = new Professor(1, "Павлов", "Борис", true, "01.01.1954");
         professor.setSpecialization("Математика");
 
         assertEquals("Павлов", professor.getSurname());

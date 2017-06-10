@@ -15,7 +15,7 @@ public class StudentTest {
 
     @Test
     public void StudentShouldTakeCorrectData() {
-        Student student = new Student("Васин", "Дмитрий", true, "09.01.1983");
+        Student student = new Student(1, "Васин", "Дмитрий", true, "09.01.1983");
         student.setGroup(Group.GROUP_1);
         student.setAvgAttendanceRating(9.0);
         student.setAvgRating(8.5);

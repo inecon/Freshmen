@@ -13,27 +13,27 @@ public class PeopelsInit {
     private ArrayList<Professor> professors = new ArrayList();
 
     public ArrayList<Student> initStudents() {
-        students.add(new Student("Васин", "Дмитрий", true, "09.01.1983"));
-        students.get(0).setGroup(Group.GROUP_2);
+        students.add(new Student(students.size() + 1, "Васин", "Дмитрий", true, "09.01.1983"));
+        students.get(0).setGroup(Group.GROUP_1);
         students.get(0).setAvgAttendanceRating(8.0);
         students.get(0).setAvgRating(7.0);
 
-        students.add(new Student("Попов", "Константин", true, "01.06.1984"));
+        students.add(new Student(students.size() + 1, "Попов", "Константин", true, "01.06.1984"));
         students.get(1).setGroup(Group.GROUP_1);
         students.get(1).setAvgAttendanceRating(6.5);
         students.get(1).setAvgRating(6.0);
 
-        students.add(new Student("Иванов", "Михаил", true, "06.10.1985"));
+        students.add(new Student(students.size() + 1, "Иванов", "Михаил", true, "06.10.1985"));
         students.get(2).setGroup(Group.GROUP_1);
         students.get(2).setAvgAttendanceRating(9.0);
         students.get(2).setAvgRating(8.5);
 
-        students.add(new Student("Шевченко", "Анна", false, "12.15.1984"));
+        students.add(new Student(students.size() + 1, "Шевченко", "Анна", false, "12.15.1984"));
         students.get(3).setGroup(Group.GROUP_1);
         students.get(3).setAvgAttendanceRating(8.0);
         students.get(3).setAvgRating(7.0);
 
-        students.add(new Student("Пархоменко", "Тарас", true, "15.07.1982"));
+        students.add(new Student(students.size() + 1, "Пархоменко", "Тарас", true, "15.07.1982"));
         students.get(4).setGroup(Group.GROUP_1);
         students.get(4).setAvgAttendanceRating(6.8);
         students.get(4).setAvgRating(8.3);
@@ -42,7 +42,7 @@ public class PeopelsInit {
     }
 
     public ArrayList<Professor> initProffesor() {
-        professors.add(new Professor("Измаилов", "Вениамин", true, "05.05.1954"));
+        professors.add(new Professor(professors.size() + 1, "Измаилов", "Вениамин", true, "05.05.1954"));
         professors.get(0).setSpecialization("Математика");
 
         return professors;
