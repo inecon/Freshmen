@@ -20,8 +20,8 @@ public class StudentTest {
         assertEquals(true, student.getSex());
         assertEquals("09.01.1983", student.getBirthDate());
         assertEquals(GROUP_1, student.getGroup());
-        assertEquals(0,(Double.compare(9.0,student.getAvgAttendanceRating())));
-        assertEquals(0,(Double.compare(8.5,student.getAvgRating())));
+        assertEquals(0, (Double.compare(9.0, student.getAvgAttendanceRating())));
+        assertEquals(0, (Double.compare(8.5, student.getAvgRating())));
     }
 
 }

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- *  This class makes almost all logic of program
+ * This class makes almost all logic of program
  */
 public class RunFunction {
     private ArrayList<Student> workingWithStudents;
@@ -42,6 +42,7 @@ public class RunFunction {
                 startProgram();
         }
     }
+
     /**
      * This method is a choice to make class leader elections
      */
@@ -69,6 +70,7 @@ public class RunFunction {
                 break;
         }
     }
+
     /**
      * This method for professor to make rollcall
      */
@@ -87,6 +89,7 @@ public class RunFunction {
         }
         exitProgram();
     }
+
     /**
      * In this method process of election of class leader
      */
@@ -98,7 +101,7 @@ public class RunFunction {
 
         for (int i = 0; i < workingWithStudents.size(); i++) {
             System.out.println("\n Студент № " + workingWithStudents.get(i).getId() + " " + workingWithStudents.get(i).getSurname() +
-                    " " +  workingWithStudents.get(i).getName() + " Сделайте свой выбор");
+                    " " + workingWithStudents.get(i).getName() + " Сделайте свой выбор");
             setLeadRate();
         }
 
@@ -107,6 +110,7 @@ public class RunFunction {
         System.out.print("\n");
         startProgram();
     }
+
     /**
      * This method need for student to making him/her vote class leader.
      */
@@ -135,6 +139,7 @@ public class RunFunction {
                 setLeadRate();
         }
     }
+
     /**
      * This method finds class leader, but now if students have the same LeadRate method returns
      * first of ArrayList index student. logic can be improved :)
@@ -151,6 +156,7 @@ public class RunFunction {
         }
         return studentNumber;
     }
+
     /**
      * This method for professor to mark stodent is present or no
      */
@@ -172,10 +178,11 @@ public class RunFunction {
         }
         return absent;
     }
+
     /**
      * This method gives to user choice to exit from program or no
      */
-    public void exitProgram(){
+    public void exitProgram() {
         Scanner sc = new Scanner(System.in);
         int answer1or2 = 0;
         System.out.println("Выйти из программы \"1\" \n Продолжить  \"2\" ");

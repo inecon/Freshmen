@@ -23,6 +23,7 @@ public class Student extends Human {
         super.printInfo();
         System.out.println("Группа: " + group + ", успеваемость: " + avgRating + ", посещаемость: " + avgAttendanceRating);
     }
+
     /*
     * Print method to print students after rollcall
      */

@@ -10,6 +10,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
+
 public class RunFunctionTest {
     private ArrayList<Student> students = new ArrayList();
     private ArrayList<Professor> professors = new ArrayList();

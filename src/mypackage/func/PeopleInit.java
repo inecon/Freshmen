@@ -6,7 +6,7 @@ import mypackage.peoples.Student;
 import java.util.ArrayList;
 
 /**
- *  This class is initialized students and professors
+ * This class is initialized students and professors
  */
 public class PeopleInit {
     private ArrayList<Student> students = new ArrayList();
@@ -47,6 +47,7 @@ public class PeopleInit {
 
         return professors;
     }
+
     /**
      * Prints table of people of manual (hardcode :) ) initialization
      */
