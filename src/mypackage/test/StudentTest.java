@@ -8,7 +8,6 @@ import static mypackage.func.Group.*;
 import static org.junit.Assert.*;
 
 public class StudentTest {
-
     @Test
     public void StudentShouldTakeCorrectData() {
         Student student = new Student(1, "Васин", "Дмитрий", true, "09.01.1983");

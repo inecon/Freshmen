@@ -1,12 +1,12 @@
 package mypackage;
 
-import mypackage.func.PeopelsInit;
+import mypackage.func.PeopleInit;
 import mypackage.func.RunFunction;
 
 public class Main {
 
     public static void main(String[] args) {
-        PeopelsInit peopleInit = new PeopelsInit();
+        PeopleInit peopleInit = new PeopleInit();
         //manual initialization
         peopleInit.initStudents();
         peopleInit.initProffesor();
