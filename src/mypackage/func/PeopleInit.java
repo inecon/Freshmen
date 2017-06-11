@@ -8,7 +8,7 @@ import java.util.ArrayList;
 /**
  *  This class is initialized students and professors
  */
-public class PeopelsInit {
+public class PeopleInit {
     private ArrayList<Student> students = new ArrayList();
     private ArrayList<Professor> professors = new ArrayList();
 

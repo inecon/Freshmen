@@ -8,8 +8,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 
 import static junit.framework.TestCase.assertEquals;
-
-public class PeopelsInitTest {
+public class PeopleInitTest {
     private ArrayList<Student> students = new ArrayList();
     private ArrayList<Professor> professors = new ArrayList();
 
