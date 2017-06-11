@@ -18,17 +18,20 @@ public class Student extends Human {
         super(id, surname, name, sex, birthDate);
     }
 
-    @Override
+
     public void printInfo() {
         super.printInfo();
         System.out.println("Группа: " + group + ", успеваемость: " + avgRating + ", посещаемость: " + avgAttendanceRating);
     }
-
+    /*
+    * Print method to print students after rollcall
+     */
     public void printInfoWithAbsent() {
         super.printInfo();
         System.out.printf("Группа: " + group + " (%s) ", absent ? "присутствует" : "отсутсвует");
         System.out.println("\n");
     }
+
     public Group getGroup() {
         return group;
     }

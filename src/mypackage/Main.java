@@ -7,24 +7,13 @@ public class Main {
 
     public static void main(String[] args) {
         PeopelsInit peopleInit = new PeopelsInit();
+        //manual initialization
         peopleInit.initStudents();
         peopleInit.initProffesor();
-
-        System.out.println("                                 Список студентов \n " +
-                "----------------------------------------------------------------\n");
-
-        for (int i = 0; i < peopleInit.getStudents().size(); i++) {
-            peopleInit.getStudents().get(i).printInfo();
-        }
-        System.out.println(" ----------------------------------------------------------------\n " +
-                "                               Список профессоров \n");
-
-        for (int i = 0; i < peopleInit.getProfessors().size(); i++) {
-            peopleInit.getProfessors().get(i).printInfo();
-        }
-        System.out.println("\n\n");
+        //print list of students and professors
+        peopleInit.printInit();
 
         RunFunction runFunction = new RunFunction(peopleInit.getStudents(), peopleInit.getProfessors());
-        runFunction.makingChoise();
+        runFunction.startProgram();
     }
 }

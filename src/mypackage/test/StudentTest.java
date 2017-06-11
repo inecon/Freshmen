@@ -7,11 +7,7 @@ import org.junit.Test;
 import static mypackage.func.Group.*;
 import static org.junit.Assert.*;
 
-/**
- * Created by User on 09.06.2017.
- */
 public class StudentTest {
-
 
     @Test
     public void StudentShouldTakeCorrectData() {

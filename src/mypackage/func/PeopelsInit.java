@@ -6,7 +6,7 @@ import mypackage.peoples.Student;
 import java.util.ArrayList;
 
 /**
- * Created by User on 09.06.2017.
+ *  This class is initialized students and professors
  */
 public class PeopelsInit {
     private ArrayList<Student> students = new ArrayList();
@@ -46,6 +46,24 @@ public class PeopelsInit {
         professors.get(0).setSpecialization("Математика");
 
         return professors;
+    }
+    /**
+     * Prints table of people of manual (hardcode :) ) initialization
+     */
+    public void printInit() {
+        System.out.println("                                 Список студентов \n " +
+                "----------------------------------------------------------------\n");
+
+        for (int i = 0; i < students.size(); i++) {
+            students.get(i).printInfo();
+        }
+        System.out.println(" ----------------------------------------------------------------\n " +
+                "                               Список профессоров \n");
+
+        for (int i = 0; i < professors.size(); i++) {
+            professors.get(i).printInfo();
+        }
+        System.out.println("\n\n");
     }
 
     public ArrayList<Student> getStudents() {
